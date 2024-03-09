@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>StudentRegisterServlet</servlet-name>
+        <servlet-class>com.classRegistration.servlet.StudentRegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StudentLogoutServlet</servlet-name>
+        <servlet-class>com.classRegistration.servlet.StudentLogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FacultyLogoutServlet</servlet-name>
+        <servlet-class>com.classRegistration.servlet.FacultyLogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FacultyDashboardServlet</servlet-name>
+        <servlet-class>com.classRegistration.servlet.FacultyDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentRegisterServlet</servlet-name>
+        <url-pattern>/StudentRegisterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FacultyLoginServlet</servlet-name>
+        <url-pattern>/FacultyLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentLogoutServlet</servlet-name>
+        <url-pattern>/StudentLogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FacultyLogoutServlet</servlet-name>
+        <url-pattern>/FacultyLogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FacultyDashboardServlet</servlet-name>
+        <url-pattern>/FacultyDashboardServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
